@@ -1,0 +1,135 @@
+.content_area{
+    background-image: url("./falcon logo/bg6.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 80%;
+    /* background-color: rgba(255, 255, 255, 0.521); */
+    margin: 50px 0px;
+}
+.heading{
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+    color: yellow;
+    background-color: rgba(128, 128, 128, 0.601);
+}
+.hori_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hori_line{
+    height: 0.5px;
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: black;
+}
+.service_box{
+    background-color: white;
+    border-radius: 50px;
+    margin:  50px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service_content{
+    text-align: center;
+    width: 60%;
+}
+.service_name{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50px;
+}
+.service_about{    
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+.service_pic{
+    height: 250px;
+    width: 30%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sp{
+    height: 80%;
+    border-radius: 50px;
+}
+.service_about p{
+    padding: 5px;
+}
+a{
+    font-size: 13px;
+    color: rgb(1, 128, 197);
+}
+.sb1{
+    position: relative;
+    animation: sbmove 2s forwards; /* Define the animation */
+    animation-fill-mode: forwards;
+}
+.sb3{
+    position: relative;
+    animation: sbmove 2s forwards 1.5s; /* Define the animation */
+    animation-fill-mode: forwards;
+}
+.sb2{
+    position: relative;
+    animation: sb2move 2s forwards; /* Define the animation */
+    animation-fill-mode: forwards;
+}
+@keyframes sbmove {
+    from {
+        right: -300px; 
+    }
+    to {
+        right: 0;
+    }
+}
+@keyframes sb2move {
+    from {
+        left: -300px; 
+    }
+    to {
+        left: 0;
+    }   
+}
+@media  screen and (max-width:850px) {
+    .heading{
+        font-size: 40px;
+    }
+    .service_pic{
+        height: 200px;
+    }
+    .service_about{    
+        font-size: 12px;
+    }
+}
+@media  screen and (max-width:750px) {
+    .heading{
+        margin-top: 0;
+    }
+    .service_pic{
+        height: 150px;
+    }
+    .content{
+        width: 90%;
+    }
+}
+@media  screen and (max-width:600px) {
+    .service_pic{
+        width: 80%;
+    }
+    .service_box{
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    .service_content{
+        width: 80%;
+    }
+}

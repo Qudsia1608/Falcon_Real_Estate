@@ -1,0 +1,681 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("./falcon logo/skyline.png");
+    background-size: cover;
+}
+.navbar_reserve{
+    height: 70px;
+    width: 100%;
+    background-color: aqua;
+}
+.fullscreen{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.sidebar_reserve{
+    width: 80px;
+    height: 100vh;
+    background-color: pink;
+}
+.content_area{
+    position: relative;
+    width: 95%;
+    background-color: white;
+}
+/* .herosection{
+    height: 400px;
+}
+.heroimg{
+    height: 400px;
+    width: 100%;
+} */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: white;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navmenu{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+.navitem{
+    padding: 12px;
+}
+.navitem a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navcontact{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#navcontact{
+    padding: 5px 30px;
+    border: 1px solid black;
+}
+#navcontact a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    height: 120px;
+    width: 120px;
+}
+.sidelogo{
+    position: fixed;
+    top: 45px;
+    left: 20px;
+    transition: 0.3s;
+}
+.sidebar:hover .sidelogo{
+    top: 35px;
+    left: 60px;
+}
+.sidebar:hover .logo{
+    height: 120px;
+    width: 120px;
+}
+.sidebar:hover .menuicon{
+    visibility: hidden;
+}
+.sidebar{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background-color: rgb(180, 180, 180);
+    transition: width 1s; 
+}
+.sidebar:hover{
+    width: 250px;
+}
+.menu{
+    position: relative;
+    top:150px;
+}
+.menuitem{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.menuitem i{
+    padding: 10px;
+    font-size: 20px;
+}
+.menuitem a{
+    position: absolute;
+    padding: 10px;
+    margin-left: 40px;
+    visibility: hidden;
+    transition: ease-in 1s ease-out 0.1s; 
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sidebar:hover .menuitem p{
+    visibility: visible;
+}
+.sidebar:hover .menuitem i{
+    margin-right: 150px;
+}
+.itemline{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    background-color: black;
+    width: 80%;
+    height: 0.5px;
+}
+#ourAssociates, #ourtestimonials, #ourservices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.testimonialslist{
+    display: flex;
+    height: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    margin: 0px 50px;
+}
+.testimonialsline{
+    background-color: grey;
+    height: 80px;
+    width: 0.5px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    background-color: rgba(46, 46, 98, 0.873);
+    margin: 25px 90px;
+    margin-bottom: 50px;
+    height: 800px;
+    padding: 30px;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+.project:hover{
+    position: relative;
+    top: -15px;
+}
+#pr1{
+    grid-column: span 2 
+} 
+#pr2{
+    grid-column: span 2
+} 
+#pr3{
+    grid-column: span 2;
+} 
+.prpic{
+    margin-top: 5%;
+    height: 75%;
+    width: 90%;
+    background-color: antiquewhite;
+}
+#pr1 .prpic{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    background-image: url("./falcon logo/Our\ Marketed\ Projects.png");
+    background-size: cover;
+} 
+#pr2 .prpic{
+    background-image: url("./falcon logo/insignia.jpg");
+    background-size: cover;
+    margin-top: 2.5%;
+    width: 95%;    
+}
+#pr3 .prpic{
+    background-image: url("./falcon logo/gateway.jpg");
+    background-size: cover;
+    margin-top: 2.5%;
+    width: 95%;
+}
+#pr4 .prpic{
+    background-image: url("./falcon logo/aliplaza.jpg");
+    background-size: cover;
+}
+#pr5 .prpic{
+    background-image: url("./falcon logo/goldsgym.jpg");
+    background-size: cover;
+}
+.prname{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer{
+    height: 300px;
+    background-color: rgb(57, 57, 57);
+    margin-top: 50px; 
+    color: white;   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.fcont_item{
+    display: flex;
+    padding: 10px;
+}
+.fcont_item a{
+    color: white;
+}
+.fcont_item i{
+    padding-right: 20px;
+    padding-top: 3px;
+}
+.foot_heading{
+    font-size: 20px;
+    margin-top: 25px;
+}
+.fcont_item a:hover{
+    color:grey;
+}
+.assoclist{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 100px;
+    height: 250px;
+}
+.associate{
+    height: 200px;
+    width: 200px;
+}
+.associate:hover{
+    height: 220px;
+    width: 220px;
+}
+.asso_pic{
+    background-color: aqua;
+    background-image: url("./falcon logo/person.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.assoc_name{
+    text-align: center;
+    margin: 15px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ourservices a{
+    text-decoration: none;
+    color: black;
+}
+.ourservices a:hover{
+    text-decoration: none;
+}
+.ourservices a:active{
+    text-decoration: none;
+    color: white;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.serv{
+    padding: 50px;
+    margin: 20px;
+    width: 20%;
+    border-radius: 20px;
+    border: 1px solid rgb(7, 7, 116);
+    color: rgb(7, 7, 116);
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.servname{
+    display: flex;
+    justify-content: center;
+}
+.servlogo svg{
+    height: 40px;
+    width: 40px;
+    padding: 15px;
+}
+.serv:hover{
+    background: linear-gradient(rgb(0, 0, 82),rgb(0, 0, 165),rgb(73, 73, 255));
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* screen adjustments */
+
+@media screen and (min-width:1000px){
+    .herosection{
+        height: 400px;
+    }
+    .heroimg{
+        height: 400px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:800px){
+    .herosection{
+        height: 300px;
+    }
+    .heroimg{
+        height: 300px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:800px){
+    .heroimg{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1250px){
+    .projects{
+        height: 750px;
+    }
+    .prname{
+        bottom: 20px;
+    }
+}
+@media screen and (max-width:1100px){
+    .projects{
+        height: 500px;
+    }
+    .prname{
+        bottom: 15px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:900px){
+    .projects{
+        height: 400px;
+    }
+    .prname{
+        bottom: 7px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:800px){
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .projects{
+        height: 1500px;
+    }
+    .prname{
+        bottom: 20px;
+        font-size: 15px;
+    }
+    .services{
+        margin: 15px;
+    }
+    .serv{
+        padding: 30px;
+        margin: 15px;
+    }
+    .content_area{
+        position: relative;
+        width: 90%;
+    }
+    .associate{
+        height: 150px;
+        width: 150px;
+    }
+    .associate:hover{
+        height: 180px;
+        width: 180px;
+    }
+    #ourservices{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:750px){
+    .projects{
+        height: 1200px;
+        margin: 25px 50px;
+    }
+    .prname{
+        bottom: 20px;
+        font-size: 15px;
+    }
+    .services{
+        margin: 12px;
+    }
+    .serv{
+        padding: 25px;
+        margin: 10px;
+    }    
+    #ourAssociates{
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    .assoclist{
+        align-items: flex-start;
+        margin: 30px;
+    }
+}
+@media screen and (max-width:650px){
+    .content_area{
+        position: relative;
+        width: 85%;
+    }
+    .services{
+        margin: 10px;
+    }
+    .serv{
+        padding: 20px;
+        margin: 10px;
+        font-size: 15px;
+    }    
+    .associate{
+        height: 120px;
+        width: 120px;
+    }
+    .projects{
+        margin: 25px 30px;
+        height: 1200px;
+    }
+    .testimonialslist{
+        margin: 0px 20px;
+    }
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+    .sidelogo{
+        position: fixed;
+        top: 60px;
+        left: 20px;
+        transition: 0.3s;
+    }
+    .sidebar:hover .sidelogo{
+        top: 55px;
+        left: 65px;
+    }
+}
+@media screen and (max-width:550px){
+    body{
+        background-color: pink;
+    }
+    .navitem{
+        padding: 12px 5px;
+    }
+    .services{
+        margin: 20px 5px 0px 5px;
+        justify-content: space-evenly;
+    }
+    .serv{
+        padding: 10px;
+        margin: 10px;
+        font-size: 13px;
+    }    
+    .servlogo svg{
+        height: 30px;
+        width: 30px;
+        padding: 15px;
+    }
+    .projects{
+        height: 900px;
+    }
+    .prname{
+        bottom: 7px;
+        font-size: 12px;
+    }
+    .footer{
+        margin-top: 30px; 
+        height: 500px;
+    }
+    .fcont_item i{
+        padding: 3px 15px 0px 15px;
+    }
+    .foot_heading{
+        font-size: 18px;
+        margin-top: 25px;
+        padding: 0px 15px;
+    }
+    .fcont_item{
+        font-size: 13px;
+    }
+    #ourAssociates{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .menu{
+        position: relative;
+        top:120px;
+    }
+    .navitem a{
+        font-size: 12px;
+    }    
+    #navcontact{
+        padding: 5px 30px;
+    }
+    #navcontact a{
+        font-size: 12px;
+    }
+    .assoclist{
+        flex-wrap: wrap;
+        margin: 30px 50px 150px 50px;
+        height: 650px;
+    }
+    .associate{
+        height: 190px;
+        width: 150px;
+        margin: 25px;
+    }
+    .asso_pic{
+        height: 150px;
+        width: 100%;
+        border-radius: 50%;
+    }
+    .projects{
+        height: 850px;
+        gap: 15px;
+        padding: 15px;
+    }
+    .prname{
+        font-size: 10px;
+    }
+    .footer{
+        display: block;
+        height: 550px;
+    }
+    .fcont_item{
+        font-size: 15px;
+    }
+    .foot_heading{
+        font-size: 20px;
+        /* text-decoration: underline; */
+    }
+    .heroimg{
+        height: 150px;
+    }
+    .testimonialslist{
+        flex-wrap: wrap;
+        height: 300px;
+    }
+    .testi-item{
+        width: 80%;
+        text-align: center;
+    }
+    .testimonialsline{
+        display: none;
+    }
+}
+@media screen and (max-width:400px) {
+    .heroimg{
+        height: 100px;
+    }
+    .navitem a{
+        font-size: 12px;
+        text-align: center;
+    }    
+    .navcontact{
+        margin: 5px;
+        width: 180px;
+    }
+    #navcontact{
+        padding: 5px 15px;
+    }
+    #navcontact a{
+        font-size: 12px;
+    }
+    .content_area{
+        width: 80%;
+    }
+    .servlogo svg{
+        height: 18px;
+        width: 18px;
+        padding: 5px;
+    }
+    .serv{
+        font-size: 12px;
+        margin: 2px;
+    }    
+    .projects{
+        height: 650px;
+        gap: 10px;
+        padding: 10px;
+    }
+    .prname{
+        font-size: 10px;
+        bottom: 1px;
+    }
+    .logo{
+        height: 80px;
+        width: 80px;
+    }
+    .sidelogo{
+        position: fixed;
+        top: 60px;
+        left: 20px;
+        transition: 0.3s;
+    }
+    .sidebar:hover .sidelogo{
+        top: 55px;
+        left: 65px;
+    }
+    .assoclist{
+        margin: 30px 50px 100px 50px;
+        height: 650px;
+    }
+    .associate{
+        height: 150px;
+        width: 120px;
+    }
+    .asso_pic{
+        height: 120px;
+    }
+}

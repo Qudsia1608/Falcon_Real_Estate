@@ -1,0 +1,88 @@
+.content_area{
+    background-image: url("./falcon logo/bg1.png");
+    background-size: cover;
+    /* background-repeat: repeat; */
+    /* height: 1300px; */
+}
+.whitearea{
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whitebox{
+    width: 70%;
+    border-radius: 50px;
+    background-color: rgba(240, 248, 255, 0.699);
+}
+.heading{
+    text-align: center;
+    margin: 30px 30px 10px 30px;
+    font-size: 50px;
+}
+.hori_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hori_line{
+    height: 1px;
+    width: 80%;
+    margin-bottom: 30px;
+    background-color: black;
+}
+.about_para p{
+    margin: 0px 20px 30px 20px;
+    font-size: 18px;
+}
+.about_para img{
+    height: 250px;
+    width: 250px;
+    margin: 0px 20px;
+    border-radius: 25px;
+    float: right;
+    text-wrap: wrap;
+}
+@media  screen and (max-width:850px) {
+    .heading{
+        font-size: 40px;
+    }
+}
+@media  screen and (max-width:750px) {
+    .heading{
+        font-size: 30px;
+    }
+    .about_para img{
+        height: 180px;
+        width: 180px;
+    }
+    .about_para p{
+        font-size: 15px;
+    }
+}
+@media  screen and (max-width:550px) {
+    .about_para img{
+        height: 180px;
+        width: 180px;
+        float: none;
+    }
+    .about_img{
+        display: flex;
+        justify-content: center;
+    }
+    .about_para p{
+        margin-top: 20px;
+    }
+}
+@media  screen and (max-width:450px) {
+    .whitearea{
+        margin: 50px 0px;
+    }
+    .whitebox{
+        width: 85%;
+    }
+    .about_para img{
+        height: 150px;
+        width: 150px;
+    }
+}

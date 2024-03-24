@@ -1,0 +1,72 @@
+.content_area{
+    background-image: url("./falcon logo/bg7.png");
+    background-size: cover;
+}
+.whitebox{
+    width: 50%;
+}
+.search_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.search_bar{
+    display: flex;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: rgb(193, 193, 193);
+    border-radius: 30px;
+}
+select{
+    border: 0;
+    height: 100%;
+}
+.hr_pr{
+    height: 0.8px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.project_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project_list{
+    width: 80%;
+}
+.project_section{
+    margin: 20px;
+}
+.pr_name{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.pr_addr{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media  screen and (max-width:1000px) {
+    .whitebox{
+        width: 70%;
+    }
+}
+@media  screen and (max-width:650px) {
+    .search_bar{
+        font-size: 13px;
+        padding: 10px 10px;
+        width: 80%;
+    }
+    .search_line{
+        width: 70%;
+    }
+    #selector{
+        width: 50px;
+    }
+}
+@media  screen and (max-width:450px) {
+    .whitebox{
+        width: 80%;
+    }
+}

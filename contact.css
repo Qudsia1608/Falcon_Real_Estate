@@ -1,0 +1,76 @@
+.content_area{
+    background-color: aqua;
+    background-image: url("./falcon logo/bg5.png");
+    background-size: cover;
+}
+.contact_top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact_left, .contact_right{
+    padding: 20px;
+    width: 30%;
+    font-size: 18px;
+}
+.contact_left p, .contact_right p{
+    padding: 5px;
+}
+.contact_right svg{
+    height: 80px;
+    padding-bottom: 20px;
+}
+.contact_right{
+    text-align: center;
+    background-color: rgb(12, 62, 95);
+    border-radius: 50px;
+}
+.contact_right a{
+    text-decoration: none;
+    color: white;
+}
+.contact_right:hover{
+    background-color: rgb(45, 81, 130);
+}
+.map{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map iframe{
+    background-color: antiquewhite;
+    height: 300px;
+    width: 90%;
+}
+@media screen and (max-width:900px){
+    .contact_top{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .contact_left{
+        width: 85%;
+        margin-bottom: 20px;
+    }
+    .contact_right{
+        width: 60%;
+    }
+}
+@media screen and (max-width:600px) {
+    .map{
+        margin: 25px;
+    }
+    .map iframe{
+        height: 150px;
+    }
+    .whitearea{
+        margin-top: 50px;
+    }
+    .contact_right svg{
+        height: 50px;
+        padding-bottom: 10px;
+    }
+    .contact_right a{
+        font-size: 15px;
+    }
+}
