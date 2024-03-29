@@ -613,9 +613,38 @@ html{
     .testimonialsline{
         display: none;
     }
+    #more_quer{
+        display: none;
+    }
     .serv{
         background: linear-gradient(rgb(0, 0, 35),rgb(7, 7, 107),rgb(6,6,156),rgb(73, 73, 255));
         color: white;
+    }
+    #fix_logodiv{
+        top: 20px;
+        left: 10px;
+    }
+    #fix_logo{
+        height: 70px;
+        width: 70px;
+    }
+    /* Side bar adjustments */
+    .sidebar{
+        width: 250px;
+    }
+    .menuitem a{
+        position: absolute;
+        padding: 10px;
+        margin-left: 40px;
+        visibility: visible;
+        transition: ease-in 1s ease-out 0.1s; 
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .sidebar .menuitem i{
+        margin-right: 150px;
     }
 }
 @media screen and (max-width:400px) {
@@ -682,4 +711,5 @@ html{
     .asso_pic{
         height: 120px;
     }
+    
 }

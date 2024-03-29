@@ -1,7 +1,8 @@
 const sidebar=document.getElementById("sidebar");
 const hero= document.getElementById("herosection");
 const contentarea=document.getElementById("content_area");
-
+const sidebar_res=document.getElementById("sidebar_reserve");
+const phone_logo= document.getElementById("fix_logodiv");
 
 let screen_height = window.innerHeight;
 let screen_width = window.innerWidth;
@@ -18,6 +19,9 @@ function sales_resize(){
 window.onload = function() {
     screen_height = window.innerHeight;
     screen_width = window.innerWidth;
+    if (screen_width<500){
+        phone_screen();
+    }
     if(screen_width<=600){
         sales_resize();
     }
@@ -27,21 +31,39 @@ window.onload = function() {
 window.onresize = function() {
     screen_height = window.innerHeight;
     screen_width = window.innerWidth;
+    if (screen_width<500){
+        phone_screen();
+    }
     if(screen_width<=600){
         sales_resize();
     }
 };
+
+function phone_screen(){
+    contentarea.style.width="100%";
+    sidebar_res.style.display="none";
+    sidebar.style.display="none";
+}
 
 function sidebarout(){
     contentarea.style.transition = "1.5s";
     contentarea.style.left="170px";
     contentarea.style.width = "calc(100% - 250px)"; // Adjust width to fit the screen
     if(screen_width <= 550){
-        console.log("1");
         contentarea.style.display='none';
-        console.log("2");
+    }
+    if(screen_width<500){
+        phone_logo.style.display="none";
+        sidebar.style.display="block";
+        sidebar.addEventListener('click', function(){
+            sidebar.style.display="none";
+            contentarea.style.display="block";
+            contentarea.style.left="0px";
+            // phone_screen();
+        });
     }
 }
+
 function sidebarin(){
     contentarea.style.display='block';
     contentarea.style.left="0px";
@@ -58,8 +80,16 @@ function sidebarin(){
     } else {
         contentarea.style.width = "95%";
     }
+    //resize
+    if(screen_width<500){
+        phone_screen();
+    }
 }
-
+// function sidebarphone(){
+//     sidebar.style.display="block";
+//     phone_logo.style.display="none";
+//     contentarea.style.display="none";
+// }
 
 // projects page
 
