@@ -613,6 +613,10 @@ html{
     .testimonialsline{
         display: none;
     }
+    .serv{
+        background: linear-gradient(rgb(0, 0, 35),rgb(7, 7, 107),rgb(6,6,156),rgb(73, 73, 255));
+        color: white;
+    }
 }
 @media screen and (max-width:400px) {
     .heroimg{
