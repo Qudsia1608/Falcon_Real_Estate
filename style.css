@@ -5,6 +5,8 @@
 body{
     background-image: url("./falcon logo/skyline.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 .navbar_reserve{
     height: 70px;
@@ -19,7 +21,6 @@ body{
 .sidebar_reserve{
     width: 80px;
     height: 100vh;
-    background-color: pink;
 }
 .content_area{
     position: relative;
@@ -504,9 +505,6 @@ html{
     }
 }
 @media screen and (max-width:550px){
-    body{
-        background-color: pink;
-    }
     .navitem{
         padding: 12px 5px;
     }
@@ -548,6 +546,8 @@ html{
     }
     #ourAssociates{
         font-size: 18px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 
@@ -581,7 +581,7 @@ html{
         border-radius: 50%;
     }
     .projects{
-        height: 850px;
+        height: 1000px;
         gap: 15px;
         padding: 15px;
     }
@@ -646,6 +646,14 @@ html{
     .sidebar .menuitem i{
         margin-right: 150px;
     }
+    .sidelogo{
+        top: 35px;
+        left: 60px;
+    }
+    .logo{
+        height: 120px;
+        width: 120px;
+    }
 }
 @media screen and (max-width:400px) {
     .heroimg{
@@ -678,7 +686,7 @@ html{
         margin: 2px;
     }    
     .projects{
-        height: 650px;
+        height: 900px;
         gap: 10px;
         padding: 10px;
     }
@@ -710,6 +718,14 @@ html{
     }
     .asso_pic{
         height: 120px;
+    }
+    .sidelogo{
+        top: 35px;
+        left: 60px;
+    }
+    .logo{
+        height: 120px;
+        width: 120px;
     }
     
 }

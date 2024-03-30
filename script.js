@@ -19,8 +19,11 @@ function sales_resize(){
 window.onload = function() {
     screen_height = window.innerHeight;
     screen_width = window.innerWidth;
+    console.log("load");
     if (screen_width<500){
+        console.log("1");
         phone_screen();
+        console.log("2");
     }
     if(screen_width<=600){
         sales_resize();
