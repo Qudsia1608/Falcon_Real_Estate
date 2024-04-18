@@ -560,6 +560,12 @@ html{
     .navitem a{
         font-size: 12px;
     }    
+    .navcontact{
+        width: 120px;
+    }
+    #tagline{
+        font-size: 15px;
+    }
     #navcontact{
         padding: 5px 30px;
     }
@@ -567,17 +573,21 @@ html{
         font-size: 12px;
     }
     .assoclist{
-        flex-wrap: wrap;
-        margin: 30px 50px 150px 50px;
-        height: 650px;
+        display: flex;
+        justify-content: space-evenly;
+        height: 200px;
+        width: 90%;
     }
     .associate{
-        height: 190px;
-        width: 150px;
-        margin: 25px;
+        height: 180px;
+        width: 100px;
+        margin: 5px;
+    }
+    .assoc_name{
+        font-size: 12px;
     }
     .asso_pic{
-        height: 150px;
+        height: 100px;
         width: 100%;
         border-radius: 50%;
     }
@@ -629,7 +639,7 @@ html{
     }    
     .navcontact{
         margin: 5px;
-        width: 180px;
+        /* width: 180px; */
     }
     #navcontact{
         padding: 5px 15px;
@@ -673,6 +683,26 @@ html{
         left: 65px;
     }
     .assoclist{
+        display: flex;
+        justify-content: space-evenly;
+        height: 200px;
+        width: 90%;
+        margin-left: 20px;
+    }
+    .associate{
+        height: 180px;
+        width: 80px;
+        margin: 5px;
+    }
+    .assoc_name{
+        font-size: 12px;
+    }
+    .asso_pic{
+        height: 80px;
+        width: 100%;
+        border-radius: 50%;
+    }
+    /* .assoclist{
         margin: 30px 50px 100px 50px;
         height: 650px;
     }
@@ -682,5 +712,5 @@ html{
     }
     .asso_pic{
         height: 120px;
-    }
+    } */
 }
