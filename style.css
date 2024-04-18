@@ -561,7 +561,7 @@ html{
         font-size: 12px;
     }    
     .navcontact{
-        width: 120px;
+        width: 150px;
     }
     #tagline{
         font-size: 15px;
@@ -630,6 +630,9 @@ html{
     }
 }
 @media screen and (max-width:400px) {
+    #tagline{
+        font-size: 13px;
+    }
     .heroimg{
         height: 100px;
     }
@@ -638,7 +641,8 @@ html{
         text-align: center;
     }    
     .navcontact{
-        margin: 5px;
+        margin: 10px;
+        width: 120px;
         /* width: 180px; */
     }
     #navcontact{
